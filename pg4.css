@@ -1,0 +1,172 @@
+/* Define o estilo do corpo da página */
+body {
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do corpo */
+}
+
+/* Estilo para todos os botões */
+button {
+    width: 220px; /* Define a largura do botão */
+    height: 45px; /* Define a altura do botão */
+    top: 27px; /* Define a posição vertical do botão (não tem efeito sem posicionamento) */
+    left: 510px; /* Define a posição horizontal do botão (não tem efeito sem posicionamento) */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão */
+}
+
+/* Estilo para botões do Instagram (não está correto, falta o ponto antes do nome da classe) */
+buttonIG {
+    width: 60px; /* Define a largura do botão do Instagram */
+    height: 60px; /* Define a altura do botão do Instagram */
+    background-color: rgb(200, 191, 173); /* Define a cor de fundo do botão do Instagram */
+}
+
+/* Estilo para o título */
+.titulo {
+    font-size: 40px; /* Define o tamanho da fonte do título */
+    color: rgb(107, 96, 88); /* Define a cor do texto do título */
+    display: flex; /* Define o layout como flexível */
+    padding-left: 200px; /* Adiciona espaço à esquerda do título */
+}
+
+/* Estilo para a seção de e-mail */
+.e-mail {
+    font-size: 20px; /* Define o tamanho da fonte do e-mail */
+    color: rgb(107, 96, 88); /* Define a cor do texto do e-mail */
+    display: flex; /* Define o layout como flexível */
+    padding-left: 200px; /* Adiciona espaço à esquerda do e-mail */
+}
+
+/* Estilo para o contêiner principal */
+.box {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para a seção secundária */
+.sec {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: column; /* Alinha os itens em coluna (verticalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para o contêiner de botões */
+.ebut {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para os links */
+.liinks {
+    display: flex; /* Define o layout como flexível */
+    flex-direction: row; /* Alinha os itens em linha (horizontalmente) */
+    justify-content: space-evenly; /* Distribui os itens com espaço igual entre eles */
+}
+
+/* Estilo para a seção de links */
+.links {
+    color: rgb(107, 96, 88); /* Define a cor do texto dos links */
+    font-size: 30px; /* Define o tamanho da fonte dos links */
+    justify-items: center; /* Alinha os itens no centro  */
+}
+
+/* Estilo para botões sem borda */
+.btn {
+    border: none; /* Remove a borda dos botões */
+}
+
+/* Estilo para o botão do WhatsApp */
+.buttonWPP {
+    display: flex; /* Define o layout como flexível */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+/* Estilo para a seção de links */
+.elinks {
+    display: flex; /* Define o layout como flexível */
+    margin-top: 217px; /* Adiciona margem superior à seção de links */
+}
+
+/* Define estilos que serão aplicados quando a largura da tela for igual ou inferior a 768 pixels */
+@media screen and (max-width: 768px) {
+ /* Define
+ 
+ a altura e largura das imagens para 350 pixels */
+
+ img {
+        height: 350px;
+        width: 350px;
+    }
+    .sec {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-evenly; 
+   
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+
+    }
+
+    /* Centraliza o texto dentro dos elementos com a classe "button" */
+    .button {
+        text-align: center;
+    }
+
+    /* Define estilos para a classe "buttonWPP" */
+    .buttonWPP {
+        /* Define a altura e largura das imagens dentro de "buttonWPP" para 40 pixels */
+        img {
+            height: 40px; 
+            width: 40px;
+        }
+    }
+
+    /* Define estilos para a classe "buttonIG" */
+    .buttonIG {
+        /* Define a altura e largura das imagens dentro de "buttonIG" para 40 pixels */
+        img {
+            height: 45px; 
+            width: 65px;
+        }
+    }
+
+    /* Define o tamanho da fonte e o preenchimento à esquerda para elementos com a classe "titulo" */
+    .titulo {
+        font-size: 20px; /* Define o tamanho da fonte para 20 pixels */
+        padding-left: 40px; /* Adiciona um preenchimento à esquerda de 10 pixels */
+        height: 0px; /* Define a altura como 0 pixels  */
+    }
+
+    /* Define estilos para a classe "ebut" */
+    .ebut {
+        
+        text-align: center; /* Centraliza o texto dentro de "ebut" */
+        align-items: center; /* Alinha os itens ao centro (aplicável em flexbox, mas sem display: flex, não terá efeito) */
+        justify-content: center; /* Justifica o conteúdo ao centro (aplicável em flexbox, mas sem display: flex, não terá efeito) */
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    /* Define estilos para a classe "e-mail" */
+    .e-mail {
+        padding-left: 10px; /* Adiciona um preenchimento à esquerda de 10 pixels */
+       
+    }
+
+    /* Define estilos para a classe "links" */
+    .links {
+       
+        justify-items: flex-start; /* Justifica os itens para o início (aplicável em grid, mas sem display: grid, não terá efeito) */
+    }
+   #fc{
+    
+    text-align: center;
+    margin-left: 80px;
+   }
+}
